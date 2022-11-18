@@ -228,6 +228,7 @@
                 if(data.data){
                     document.getElementById('alertUpdated').style.display='block'
                     setTimeout(() => {
+                        location.reload()
                         loadData()
                     }, 8000)
                 }
@@ -250,6 +251,7 @@
             if(res.ok){
                 document.getElementById('alertdelete').style.display='block'
                 setTimeout(() => {
+                    location.reload()
                     loadData()
                 }, 8000)
             }
